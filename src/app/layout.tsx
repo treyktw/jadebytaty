@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LandingPage from "@/components/landingpage";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,11 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/muq4qgc.css" />  
       </head>
-      <body className="font-adobe-garamond-pro">
-        {children} 
+      <body className="font-adobe-garamond-pro bg-[#2C2D2A] scrollbar">
+        <section className="">
+          {children}
+        </section>
+         
       </body>
     </html>
   );

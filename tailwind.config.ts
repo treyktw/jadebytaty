@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config = {
   darkMode: ["class"],
@@ -16,6 +17,11 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+      
+    },
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
     },
     extend: {
       colors: {
@@ -74,7 +80,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('tailwind-scrollbar')], 
 } satisfies Config
 
 export default config
