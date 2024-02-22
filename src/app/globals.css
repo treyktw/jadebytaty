@@ -46,11 +46,11 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-[#2C2D2A] rounded-full;
+    @apply bg-[#E6E6D5] rounded-full;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    @apply bg-[#2C2D2A];
+    @apply bg-[#E6E6D5];
   }
 }
  

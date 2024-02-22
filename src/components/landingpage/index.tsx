@@ -6,20 +6,20 @@ import { NavSocials } from "@/lib/constants";
 
 const LandingPage = () => {
   return (
-    <main>
-      <section className="relative top-[70px] flex justify-center items-center w-full h-[550px] z-[-9999]">
-        <div className=" w-full flex flex-col  items-center justify-center lg:flex-row xs:top-96">
-          <div className="bg-blue-500 w-full xs:w-full mb-10">
+    <main>  
+      <section className="relative top-[70px] flex justify-center items-center w-screen h-[550px] z-[-9999] ">
+        <div className=" w-full flex flex-col  items-center justify-center lg:flex-row">
+          <div className="bg-blue-500 xs:w-full mb-10 w-screen">
             <Image
               src="/placeholder.png"
               alt="placeholder1"
               width={800}
               height={800}
-              className="items-center flex justify-center w-full xs:h-[900px]"
+              className="items-center flex justify-center xs:h-[900px] xs:w-full"
               loading="lazy"
             />
           </div>
-          <div className=" w-full  items-center flex justify-center">
+          <div className=" w-full items-center flex justify-center ">
             <Image
               src="/placeholder2.png"
               alt="placeholder2"
@@ -31,7 +31,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10  overflow-hidden">
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
         <h1 className="text-8xl font-bold mb-4 text-center m-10">
           Your Beauty <br />
           <span>Signature<br /></span>
